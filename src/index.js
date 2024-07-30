@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://frontend-raco-206efa8b3efb.herokuapp.com',
   optionsSuccessStatus: 200,
   credentials: true,
 };
@@ -20,3 +20,4 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
